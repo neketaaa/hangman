@@ -35,5 +35,17 @@ class Hangman:
                 self.list_of_guesses.append(guess)
                 break
 
-game_1 = Hangman(['Apple', 'Banana', 'Mango', 'Orange', 'Peach'])
-game_1.ask_for_input()
+
+def play_game(word_list):
+    num_lives = 5
+    game = Hangman(word_list, num_lives)
+    while True:
+        if num_lives == 0:
+            print('You lost!')
+        if game.num_letters > 0:
+            game.ask_for_input()
+        else:
+            print('Congratulations. You won the game!')
+            break
+
+play_game(['apple', 'banana', 'mango', 'orange', 'peach'])
