@@ -20,3 +20,9 @@ The code in this file is a modification of the previous one. There is a function
 'milestone_4.py'
 
 The class Hangman uses modified functions created in previous milestone as self methods. It also has fields for all data required for this game. The check_guess() method checks if the input letter is in the word. If yes it updates the appropriate fields, othervise reduces num_lives by 1. The ask_for_input() method asks user to enter single letter in an infinite loop and checks if the input is valid.
+
+## Milestone 5: Putting it all togather
+
+'milestone_5.py'
+
+The entire Hangman game logic is implemented in the 'milestone_5.py' file. It includes the class Hangman, which takes two parameters during initialization: a list of words to choose from and a number of lives. The class has methods ask_for_input() and check_guess() which ask for input in an infinite loop and check if the input is in the word, respectively. A separate function, play_game(), creates a Hangman object and calls its methods until either the win or loss conditions are met. To play the game in the console, the play_game() function can be called with list_of_words and num_lives passed to it as arguments.
