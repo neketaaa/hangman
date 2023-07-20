@@ -14,3 +14,9 @@ A simple code snippet in this file initializes the list of words to choose from.
 'milestone_3.py'
 
 The code in this file is a modification of the previous one. There is a function 'ask_for_input()' that asks for the user's input in an infinite loop until the input is valid. There's also a 'check_guess()' function, which takes the user's guess as a parameter and checks if it is in the randomly chosen word.
+
+## Milestone 4: Create the Game class
+
+'milestone_4.py'
+
+The class Hangman uses modified functions created in previous milestone as self methods. It also has fields for all data required for this game. The check_guess() method checks if the input letter is in the word. If yes it updates the appropriate fields, othervise reduces num_lives by 1. The ask_for_input() method asks user to enter single letter in an infinite loop and checks if the input is valid.
